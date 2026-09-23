@@ -1,0 +1,534 @@
+window.PROGTOOLS_QUESTIONS = [
+  {
+    "id": "progtools-fa1-1",
+    "number": 1,
+    "globalNumber": 1,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Coding standards and conventions are not necessary when working alone on small projects.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa1-2",
+    "number": 2,
+    "globalNumber": 2,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "A debugger is a tool that helps programmers step through code to identify errors.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-3",
+    "number": 3,
+    "globalNumber": 3,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Which of the following is an example of a coding convention?",
+    "options": [
+      "Running unit tests on each commit",
+      "Writing a project README file",
+      "Always writing comments in uppercase letters",
+      "Using camelCase for variable names in JavaScript"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa1-4",
+    "number": 4,
+    "globalNumber": 4,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Which statement about coding standards is TRUE?",
+    "options": [
+      "They remove the need for debugging",
+      "They are only useful for large organizations",
+      "They automatically optimize program performance",
+      "They make it easier for teams to collaborate on projects"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa1-5",
+    "number": 5,
+    "globalNumber": 5,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Coding standards make it easier to maintain software over time.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa1-6",
+    "number": 6,
+    "globalNumber": 6,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Why are coding standards important in team projects?",
+    "options": [
+      "They automatically fix all bugs in a program",
+      "They make code run faster",
+      "They ensure that all developers write code in a consistent and understandable way",
+      "They replace the need for testing"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa1-7",
+    "number": 7,
+    "globalNumber": 7,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Which of the following is NOT considered a software development tool?",
+    "options": [
+      "Integrated Development Environment (IDE)",
+      "Version Control System",
+      "Waterfall Model",
+      "Debugger"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa1-8",
+    "number": 8,
+    "globalNumber": 8,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "A benefit of using software development tools is:",
+    "options": [
+      "Improved productivity and efficiency",
+      "More manual work for the programmer",
+      "Reduced collaboration among developers",
+      "Increased errors in code"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa1-9",
+    "number": 9,
+    "globalNumber": 9,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Using consistent naming conventions makes programs easier for others to read.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-10",
+    "number": 10,
+    "globalNumber": 10,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Coding standards are important because they:",
+    "options": [
+      "Automatically fix all bugs",
+      "Help maintain code readability, consistency, and quality",
+      "Ensure every developer uses the same programming language",
+      "Eliminate the need for testing"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-11",
+    "number": 11,
+    "globalNumber": 11,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Without development tools, programmers can still write code but may lose productivity and efficiency.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-12",
+    "number": 12,
+    "globalNumber": 12,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Which of the following best describes a coding standard?",
+    "options": [
+      "A personal style preference of the programmer",
+      "A set of agreed-upon rules for writing consistent, maintainable code",
+      "A debugging process to find and fix errors",
+      "A tool that automatically generates code"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-13",
+    "number": 13,
+    "globalNumber": 13,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Photoshop is a tool commonly used to help maintain coding standards automatically?",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa1-14",
+    "number": 14,
+    "globalNumber": 14,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Software development tools are only used by expert programmers.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa1-15",
+    "number": 15,
+    "globalNumber": 15,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "What tool checks your code against coding standards and reports issues?",
+    "options": [
+      "File Explorer",
+      "Debugger",
+      "Linter (e.g., ESLint)",
+      "Compiler"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa1-16",
+    "number": 16,
+    "globalNumber": 16,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "What is the main difference between coding standards and coding conventions?",
+    "options": [
+      "Conventions apply only to one programming language, standards apply to all",
+      "Standards are required rules, while conventions are more like guidelines",
+      "Standards are for beginners, conventions are for experts",
+      "Standards are optional, while conventions are mandatory"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-17",
+    "number": 17,
+    "globalNumber": 17,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "Coding conventions are strict rules that must always be followed without exception.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "B"
+    ]
+  },
+  {
+    "id": "progtools-fa1-18",
+    "number": 18,
+    "globalNumber": 18,
+    "assessment": "FA1",
+    "category": "FA1: Coding Standards and Development Tools",
+    "type": "choice",
+    "text": "What is the difference between coding standards and coding conventions?",
+    "options": [
+      "Standards apply only to beginners, conventions apply to experts",
+      "There is no difference",
+      "Standards are formal rules; conventions are common practices or style preferences",
+      "Standards are optional, conventions are mandatory"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa2-1",
+    "number": 1,
+    "globalNumber": 19,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "All IDEs come with built-in version control and API testing features.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa2-2",
+    "number": 2,
+    "globalNumber": 20,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "What is the primary purpose of an IDE?",
+    "options": [
+      "To manage cloud deployments",
+      "To replace version control tools like Git",
+      "To compile code only",
+      "To provide a complete environment for writing, testing, and debugging programs"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa2-3",
+    "number": 3,
+    "globalNumber": 21,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "The Prettier extension is mainly used for:",
+    "options": [
+      "Managing Git repositories",
+      "Running live servers",
+      "Code formatting",
+      "Debugging JavaScript"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa2-4",
+    "number": 4,
+    "globalNumber": 22,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Extensions in VS Code can add features such as syntax highlighting, linting, or language support.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa2-5",
+    "number": 5,
+    "globalNumber": 23,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "If a developer wants to run and preview a web page instantly inside VS Code, which extension is best?",
+    "options": [
+      "Prettier",
+      "REST Client",
+      "Docker",
+      "Live Server"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa2-6",
+    "number": 6,
+    "globalNumber": 24,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "An IDE combines editing, debugging, and project management tools in one application.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa2-7",
+    "number": 7,
+    "globalNumber": 25,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "A linter is a tool used to optimize program performance.",
+    "options": [
+      "False",
+      "True"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa2-8",
+    "number": 8,
+    "globalNumber": 26,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Which extension allows you to automatically check and fix JavaScript/TypeScript code style issues?",
+    "options": [
+      "Prettier",
+      "Docker",
+      "ESLint",
+      "GitLens"
+    ],
+    "answer": [
+      "C"
+    ]
+  },
+  {
+    "id": "progtools-fa2-9",
+    "number": 9,
+    "globalNumber": 27,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Which VS Code feature helps programmers by suggesting code completions?",
+    "options": [
+      "Debugger",
+      "Breakpoints",
+      "Snippets",
+      "IntelliSense"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa2-10",
+    "number": 10,
+    "globalNumber": 28,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Debuggers allow developers to step through code line by line to find errors.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "id": "progtools-fa2-11",
+    "number": 11,
+    "globalNumber": 29,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Breakpoints in an IDE are used for:",
+    "options": [
+      "Formatting code automatically",
+      "Improving code readability",
+      "Running code without compiling",
+      "Pausing program execution during debugging"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa2-12",
+    "number": 12,
+    "globalNumber": 30,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Which programming tool helps enforce coding standards automatically?",
+    "options": [
+      "Debugger",
+      "Compiler",
+      "Interpreter",
+      "Prettier"
+    ],
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "id": "progtools-fa2-13",
+    "number": 13,
+    "globalNumber": 31,
+    "assessment": "FA2",
+    "category": "FA2: IDEs, VS Code Extensions, and Debugging",
+    "type": "choice",
+    "text": "Which of the following is NOT a feature of an Integrated Development Environment (IDE)?",
+    "options": [
+      "Version control system",
+      "Code editor",
+      "Debugger",
+      "File explorer"
+    ],
+    "answer": [
+      "A"
+    ]
+  }
+];
