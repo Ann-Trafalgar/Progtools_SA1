@@ -366,7 +366,7 @@
     renderQuestion();
     if (correct) {
       $('nextButton').hidden = true;
-      advanceId = setTimeout(goNext, 2500);
+      advanceId = setTimeout(goNext, 2000);
     }
   }
 
