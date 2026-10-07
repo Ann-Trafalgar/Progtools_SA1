@@ -588,13 +588,13 @@
     "type": "choice",
     "text": "What is a benefit of software development tools?",
     "options": [
-      "Improved productivity and efficiency",
-      "More manual work",
       "More syntax errors",
+      "More manual work",
+      "Improved productivity and efficiency",
       "Less collaboration"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -624,13 +624,13 @@
     "type": "choice",
     "text": "Why are coding standards important?",
     "options": [
-      "They maintain readability, consistency, and quality",
+      "They replace documentation",
       "They remove the need for testing",
       "They guarantee faster execution",
-      "They replace documentation"
+      "They maintain readability, consistency, and quality"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -642,11 +642,11 @@
     "type": "choice",
     "text": "Must coding conventions always be followed without exception?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "B"
+      "A"
     ]
   },
   {
@@ -676,13 +676,13 @@
     "type": "choice",
     "text": "What best describes a coding standard?",
     "options": [
-      "Agreed-upon rules for consistent, maintainable code",
       "A program that compiles code",
+      "Agreed-upon rules for consistent, maintainable code",
       "A list of Git commits",
       "An informal choice made once"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -694,13 +694,13 @@
     "type": "choice",
     "text": "How do coding standards and conventions differ?",
     "options": [
-      "Standards are formal rules; conventions are common practices or style preferences",
       "Standards are hardware; conventions are software",
+      "Standards are formal rules; conventions are common practices or style preferences",
       "Standards apply only to Git; conventions apply only to IDEs",
       "They have no difference"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -744,13 +744,13 @@
     "type": "choice",
     "text": "Why are coding standards important in team projects?",
     "options": [
-      "They help everyone write code consistently and understandably",
+      "They eliminate all merge conflicts",
       "They let teams skip code reviews",
       "They ensure everyone uses one computer",
-      "They eliminate all merge conflicts"
+      "They help everyone write code consistently and understandably"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -780,11 +780,11 @@
     "type": "choice",
     "text": "Does a debugger help programmers step through code to find errors?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -796,13 +796,13 @@
     "type": "choice",
     "text": "Which is an example of a coding convention?",
     "options": [
-      "Using camelCase for JavaScript variable names",
+      "Installing an IDE",
       "Running a debugger",
       "Pushing code to GitHub",
-      "Installing an IDE"
+      "Using camelCase for JavaScript variable names"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -814,13 +814,13 @@
     "type": "choice",
     "text": "Which is not a software development tool?",
     "options": [
-      "Waterfall Model",
-      "Debugger",
       "IDE",
+      "Debugger",
+      "Waterfall Model",
       "Version control system"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -832,11 +832,11 @@
     "type": "choice",
     "text": "Are standards and conventions unnecessary for small solo projects?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "B"
+      "A"
     ]
   },
   {
@@ -864,11 +864,11 @@
     "type": "choice",
     "text": "Can debuggers step through code line by line?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -880,13 +880,13 @@
     "type": "choice",
     "text": "Which tool helps enforce coding standards automatically?",
     "options": [
-      "Prettier",
       "Photoshop",
+      "Prettier",
       "Live Server",
       "Git clone"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -898,13 +898,13 @@
     "type": "choice",
     "text": "Which extension checks and fixes JavaScript/TypeScript code style issues?",
     "options": [
-      "ESLint",
+      "GitLens",
       "Live Server",
       "Prettier",
-      "GitLens"
+      "ESLint"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -932,13 +932,13 @@
     "type": "choice",
     "text": "What is the primary purpose of an IDE?",
     "options": [
-      "Provide an environment for writing, testing, and debugging programs",
+      "Replace every programming language",
       "Host remote Git repositories",
       "Design image assets only",
-      "Replace every programming language"
+      "Provide an environment for writing, testing, and debugging programs"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -950,13 +950,13 @@
     "type": "choice",
     "text": "Which VS Code feature suggests code completions?",
     "options": [
-      "IntelliSense",
       "Breakpoints",
+      "IntelliSense",
       "Live Server",
       "Source Control"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1006,13 +1006,13 @@
     "type": "choice",
     "text": "Which VS Code extension runs and previews a web page instantly?",
     "options": [
-      "Live Server",
+      "GitLens",
       "ESLint",
       "Prettier",
-      "GitLens"
+      "Live Server"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -1042,13 +1042,13 @@
     "type": "choice",
     "text": "Which item is not a core IDE feature?",
     "options": [
-      "Version control system",
-      "Code editor",
       "Debugger",
+      "Code editor",
+      "Version control system",
       "Project navigation"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -1078,11 +1078,11 @@
     "type": "choice",
     "text": "Can a commit never be modified or reverted after being pushed?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "B"
+      "A"
     ]
   },
   {
@@ -1094,11 +1094,11 @@
     "type": "choice",
     "text": "Is a remote repository a server-hosted project used for collaboration?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1110,11 +1110,11 @@
     "type": "choice",
     "text": "Can a Git repository exist only online?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "B"
+      "A"
     ]
   },
   {
@@ -1126,13 +1126,13 @@
     "type": "choice",
     "text": "What is true about a Git branch?",
     "options": [
-      "It represents an independent line of development",
-      "It is a backup file outside the repository",
       "It deletes all other commits",
+      "It is a backup file outside the repository",
+      "It represents an independent line of development",
       "It can exist only on GitHub"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -1144,13 +1144,13 @@
     "type": "choice",
     "text": "What does git status display?",
     "options": [
-      "The working directory and staging area’s current state",
+      "A list of GitHub users",
       "Only the remote commit history",
       "The contents of every file",
-      "A list of GitHub users"
+      "The working directory and staging area’s current state"
     ],
     "answer": [
-      "A"
+      "D"
     ]
   },
   {
@@ -1162,13 +1162,13 @@
     "type": "choice",
     "text": "Which command copies a remote repository to your computer?",
     "options": [
-      "git clone",
-      "git init",
       "git push",
+      "git init",
+      "git clone",
       "git status"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -1180,13 +1180,13 @@
     "type": "choice",
     "text": "What does git log display?",
     "options": [
-      "The repository’s commit history",
       "Untracked files only",
+      "The repository’s commit history",
       "The current code editor settings",
       "Remote passwords"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1198,13 +1198,13 @@
     "type": "choice",
     "text": "What best describes version control?",
     "options": [
-      "A system for tracking file changes and coordinating developers’ work",
-      "A code formatter",
       "A method of testing network speed",
+      "A code formatter",
+      "A system for tracking file changes and coordinating developers’ work",
       "An image editing tool"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -1216,13 +1216,13 @@
     "type": "choice",
     "text": "What is a GitHub pull request for?",
     "options": [
-      "Suggesting changes for review and merging into a branch",
       "Deleting a local repository",
+      "Suggesting changes for review and merging into a branch",
       "Installing Git",
       "Running a debugger"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1268,13 +1268,13 @@
     "type": "choice",
     "text": "What is git init used for?",
     "options": [
-      "Starting a new local repository",
-      "Downloading a remote repository",
       "Showing commit history",
+      "Downloading a remote repository",
+      "Starting a new local repository",
       "Uploading changes"
     ],
     "answer": [
-      "A"
+      "C"
     ]
   },
   {
@@ -1286,13 +1286,13 @@
     "type": "choice",
     "text": "What is the local collection of files and change history called?",
     "options": [
-      "Repository",
       "Debugger",
+      "Repository",
       "Linter",
       "Breakpoint"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1304,11 +1304,11 @@
     "type": "choice",
     "text": "Must merge conflicts always be resolved manually?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
@@ -1354,11 +1354,11 @@
     "type": "choice",
     "text": "Does git pull download and merge remote changes into a local branch?",
     "options": [
-      "True",
-      "False"
+      "False",
+      "True"
     ],
     "answer": [
-      "A"
+      "B"
     ]
   },
   {
