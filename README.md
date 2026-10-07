@@ -1,21 +1,9 @@
 # NetQuest - Programming Tools Reviewer
 
-A responsive quiz website containing 31 questions from `ProgTools Comp.pdf`:
+A responsive quiz website with FA1 (18 questions), FA2 (13 questions), and Midterms Exam (48 scored questions plus blank slots 27–28). The combined reviewer has 79 scored questions. Midterms answer choices were added from the supplied answer list.
 
-- FA1: 18 questions on coding standards and development tools
-- FA2: 13 questions on IDEs, VS Code extensions, and debugging
-- Combined reviewer: all 31 questions
-
-The site follows the layout and behavior of the existing `networking reviewer`
-project, including saved progress, shuffling, flags, instant feedback, dark mode,
-sound, scoring, question navigation, and missed-question review.
-The interface is optimized for phones with safe-area spacing, larger touch
-targets, compact cards, and responsive question navigation.
+The reviewer supports saved progress, shuffling, flags, instant feedback, dark mode, sound, scoring, question navigation, and missed-question review. Blank Midterms slots can be passed without affecting the score.
 
 ## XAMPP
 
-Start Apache and open:
-
-`http://localhost/Fabianes/ProgTools_SA1/`
-
-No build step is required.
+Start Apache and open `http://localhost/Fabianes/ProgTools_SA1/`. No build step is required.

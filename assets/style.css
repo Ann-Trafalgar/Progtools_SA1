@@ -173,8 +173,8 @@ button:focus-visible,select:focus-visible{outline:3px solid color-mix(in srgb,va
   .question-text{margin-top:17px;font-size:15px;line-height:1.62}.question-text p{margin-bottom:15px}
   .question-code{margin:14px 0 17px;padding:12px;font-size:11px;line-height:1.55;border-radius:10px}
   .answer-panel h2{font-size:20px}.answer-panel>p{font-size:11px;margin-bottom:14px}
-  .choice-list{gap:8px}.choice-button{min-height:54px;grid-template-columns:36px minmax(0,1fr);gap:9px;padding:8px 10px;border-radius:11px}
-  .choice-letter{width:34px;height:34px;border-radius:9px}.choice-copy{font-size:13px;line-height:1.48}
+  .choice-list{gap:9px}.choice-button{min-height:56px;grid-template-columns:36px minmax(0,1fr);gap:9px;padding:8px 10px;border-radius:11px}
+  .choice-letter{width:34px;height:34px;border-radius:9px}.choice-copy{font-size:14px;line-height:1.5}
   .edit-row{margin:9px 0 11px}.edit-row button{min-height:40px;padding:8px;font-size:11px}
   .submit-button,.next-button{min-height:52px;font-size:14px}.feedback{font-size:12px;padding:12px}
 

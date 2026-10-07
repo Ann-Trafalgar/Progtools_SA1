@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A Programming Tools reviewer built from the FA1 and FA2 questions in ProgTools Comp.pdf.">
+  <meta name="description" content="A Programming Tools reviewer with FA1, FA2, and Midterms Exam question banks.">
   <title>NetQuest - Programming Tools Reviewer</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -16,7 +16,7 @@
       <span class="brand-mark">N</span><span>NetQuest</span>
     </a>
     <div class="top-actions">
-      <span class="source-pill">31 questions · 3 study sets</span>
+      <span class="source-pill">81 slots · 4 study sets</span>
       <button class="icon-button" id="themeButton" type="button" aria-label="Toggle dark mode">☾</button>
       <button class="icon-button" id="soundButton" type="button" aria-label="Toggle sound">♪</button>
     </div>
@@ -27,7 +27,7 @@
       <div class="hero-copy">
         <span class="eyebrow">PROGRAMMING TOOLS REVIEWER</span>
         <h1>Choose what you<br><span>want to review.</span></h1>
-        <p>Study all 31 questions from ProgTools Comp.pdf in one session, or focus on FA1 or FA2 separately. Every answer is checked against the answer key shown in the PDF.</p>
+        <p>Study FA1, FA2, and the Midterms Exam together or separately. Midterms questions 27–28 are blank because their source images were unavailable.</p>
 
         <label class="setting-card shuffle-mode-control">
           <span><strong>Shuffle mode</strong><small>Choose exactly what gets randomized</small></span>
@@ -39,20 +39,14 @@
           </select>
         </label>
 
-        <label class="setting-card toggle-setting">
-          <input id="pauseWrongToggle" type="checkbox" checked>
-          <span class="toggle-track"><i></i></span>
-          <span><strong>Pause after wrong answers</strong><small>Continue only when you are ready</small></span>
-        </label>
-
         <div class="hero-actions resume-actions">
           <button class="secondary-button" id="resumeButton" type="button" hidden>Resume saved assessment</button>
         </div>
 
         <div class="stats-strip">
-          <div><strong>31</strong><span>Unique questions</span></div>
-          <div><strong>3</strong><span>Study sets</span></div>
-          <div><strong>FA1 + FA2</strong><span>Exam groups</span></div>
+          <div><strong>79</strong><span>Answered questions</span></div>
+          <div><strong>4</strong><span>Study sets</span></div>
+          <div><strong>3</strong><span>Exam groups</span></div>
         </div>
       </div>
 
@@ -86,6 +80,10 @@
           <div class="assessment-grid" id="faAssessmentGrid"></div>
         </div>
 
+        <div class="assessment-section">
+          <h3>Midterms Exam</h3>
+          <div class="assessment-grid" id="midtermsAssessmentGrid"></div>
+        </div>
       </section>
     </section>
 
@@ -114,8 +112,8 @@
           <h2 id="answerTitle">Select one answer</h2>
           <p id="answerHint">Choose the best answer below.</p>
           <div id="answerArea"></div>
-          <div class="edit-row"><button id="clearButton" type="button">Clear selection</button></div>
-          <button class="submit-button" id="submitButton" type="button" disabled>Check answer</button>
+          <div class="edit-row" hidden><button id="clearButton" type="button">Clear selection</button></div>
+          <button class="submit-button" id="submitButton" type="button" hidden disabled>Check answer</button>
           <div class="feedback" id="feedback" role="status"></div>
           <button class="next-button" id="nextButton" type="button" hidden>Next question →</button>
         </aside>

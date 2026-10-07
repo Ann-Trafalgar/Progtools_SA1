@@ -9,18 +9,18 @@
   const storageKey = 'netquest-progtools-fa-progress-v1';
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-  const assessmentOrder = ['FA1', 'FA2'];
+  const assessmentOrder = ['FA1', 'FA2', 'Midterms Exam'];
   const assessments = [
     {
       id: 'all',
       group: 'final',
-      title: 'Programming Tools — FA1 + FA2',
-      subtitle: 'All 31 questions from both formative assessments.',
+      title: 'Complete Programming Tools Reviewer',
+      subtitle: '79 scored questions and 2 blank Midterms slots across all sets.',
       questions: finalExamQuestions
     },
     ...assessmentOrder.map(assessment => ({
       id: assessment.toLowerCase(),
-      group: assessment.startsWith('FA') ? 'fa' : 'sa',
+      group: assessment.startsWith('FA') ? 'fa' : 'midterms',
       title: assessment,
       subtitle: finalExamQuestions.find(question => question.assessment === assessment)?.category.replace(`${assessment}: `, '') || 'Programming Tools assessment',
       questions: finalExamQuestions.filter(question => question.assessment === assessment)
@@ -35,7 +35,7 @@
   let timerId = null;
   let advanceId = null;
 
-  function freshState(order = finalExamQuestions.map(question => question.id), mode = 'assessment', assessmentId = 'all', scopeLabel = 'Programming Tools — FA1 + FA2') {
+  function freshState(order = finalExamQuestions.map(question => question.id), mode = 'assessment', assessmentId = 'all', scopeLabel = 'Complete Programming Tools Reviewer') {
     return {
       order,
       index: 0,
@@ -91,7 +91,7 @@
       if (!saved || !Array.isArray(saved.order) || !saved.answered) return null;
       if (!saved.order.every(id => byId.has(id))) return null;
       return {
-        ...freshState(saved.order, saved.mode || 'assessment', saved.assessmentId || 'all', saved.scopeLabel || 'Programming Tools — FA1 + FA2'),
+        ...freshState(saved.order, saved.mode || 'assessment', saved.assessmentId || 'all', saved.scopeLabel || 'Complete Programming Tools Reviewer'),
         ...saved
       };
     } catch {
@@ -142,7 +142,6 @@
       const shuffleMode = $('shuffleMode').value;
       state.shuffleQuestions = shuffleMode === 'questions' || shuffleMode === 'both';
       state.shuffleChoices = shuffleMode === 'choices' || shuffleMode === 'both';
-      state.pauseWrong = $('pauseWrongToggle').checked;
       if (state.shuffleQuestions) state.order = shuffled(state.order);
       persist();
     }
@@ -186,14 +185,21 @@
     $('feedback').className = 'feedback';
     $('feedback').replaceChildren();
     $('nextButton').hidden = true;
-    $('submitButton').hidden = Boolean(savedAnswer);
-    $('clearButton').hidden = Boolean(savedAnswer);
+    $('submitButton').hidden = true;
+    $('clearButton').hidden = true;
     $('answerArea').closest('.answer-panel').classList.toggle('answered', Boolean(savedAnswer));
 
-    if (question.type === 'match') renderMatching(question, savedAnswer);
+    if (question.type === 'placeholder') {
+      $('answerTitle').textContent = 'Question unavailable';
+      $('answerHint').textContent = 'The source question for this number was not provided. Continue without affecting your score.';
+      $('submitButton').hidden = true;
+      $('clearButton').hidden = true;
+      $('nextButton').hidden = false;
+      $('nextButton').textContent = 'Continue →';
+    } else if (question.type === 'match') renderMatching(question, savedAnswer);
     else renderChoices(question, savedAnswer);
 
-    if (savedAnswer) {
+    if (savedAnswer && question.type !== 'placeholder') {
       renderFeedback(question, savedAnswer.correct);
       $('nextButton').hidden = false;
       $('nextButton').textContent = answerCount() === questions.length ? 'See results →' : 'Next question →';
@@ -231,7 +237,7 @@
   function renderChoices(question, savedAnswer) {
     const needed = question.answer.length;
     $('answerTitle').textContent = needed > 1 ? `Select ${needed} answers` : 'Select one answer';
-    $('answerHint').textContent = needed > 1 ? `Choose exactly ${needed} options.` : 'Choose the best answer below.';
+    $('answerHint').textContent = needed > 1 ? `Choose exactly ${needed} options.` : 'Tap an answer to check it instantly.';
 
     if (!state.choiceOrders[question.id]) {
       const indexes = question.options.map((_, index) => index);
@@ -272,8 +278,11 @@
           if (needed === 1) selectedChoiceIndexes = [originalIndex];
           else if (selectedChoiceIndexes.includes(originalIndex)) selectedChoiceIndexes = selectedChoiceIndexes.filter(index => index !== originalIndex);
           else if (selectedChoiceIndexes.length < needed) selectedChoiceIndexes.push(originalIndex);
-          renderChoiceSelection(list);
-          updateSubmit(question);
+          if (needed === 1) checkAnswer();
+          else {
+            renderChoiceSelection(list);
+            updateSubmit(question);
+          }
         });
       }
       list.append(button);
@@ -355,8 +364,9 @@
     persist();
     tone(correct);
     renderQuestion();
-    if (correct || !state.pauseWrong) {
-      advanceId = setTimeout(goNext, correct ? 1200 : 2300);
+    if (correct) {
+      $('nextButton').hidden = true;
+      advanceId = setTimeout(goNext, 2500);
     }
   }
 
@@ -401,6 +411,10 @@
 
   function goNext() {
     clearTimeout(advanceId);
+    if (questions[state.index]?.type === 'placeholder' && !state.answered[questions[state.index].id]) {
+      state.answered[questions[state.index].id] = { correct: null };
+      persist();
+    }
     if (answerCount() === questions.length) {
       finish();
       return;
@@ -426,10 +440,10 @@
       button.className = 'picker-btn';
       const displayNumber = state.assessmentId === 'all' ? question.globalNumber : question.number;
       button.textContent = displayNumber;
-      button.title = `${question.assessment} question ${question.number}`;
+      button.title = `${question.assessment} question ${question.number}${question.type === 'placeholder' ? ' (blank)' : ''}`;
       button.classList.toggle('current', index === state.index);
       const answer = state.answered[question.id];
-      if (answer) button.classList.add(answer.correct ? 'correct' : 'wrong');
+      if (answer && question.type !== 'placeholder') button.classList.add(answer.correct ? 'correct' : 'wrong');
       if (state.flags.includes(question.id)) button.classList.add('flagged');
       button.addEventListener('click', () => {
         clearTimeout(advanceId);
@@ -445,7 +459,8 @@
   function renderAssessmentPicker() {
     const targets = {
       final: $('finalAssessmentGrid'),
-      fa: $('faAssessmentGrid')
+      fa: $('faAssessmentGrid'),
+      midterms: $('midtermsAssessmentGrid')
     };
     Object.values(targets).forEach(target => target.replaceChildren());
 
@@ -485,7 +500,7 @@
     clearInterval(timerId);
     clearTimeout(advanceId);
     const correct = correctCount();
-    const total = questions.length;
+    const total = questions.filter(question => question.type !== 'placeholder').length;
     const percent = Math.round((correct / total) * 100);
     $('finalPercent').textContent = `${percent}%`;
     $('finalScore').textContent = `${correct} / ${total} points`;
@@ -542,7 +557,7 @@
   });
   $('retryButton').addEventListener('click', () => begin(false, state.assessmentId));
   $('reviewButton').addEventListener('click', () => {
-    const missed = questions.filter(question => !state.answered[question.id]?.correct).map(question => question.id);
+    const missed = questions.filter(question => question.type !== 'placeholder' && !state.answered[question.id]?.correct).map(question => question.id);
     if (missed.length) begin(false, state.assessmentId, missed);
   });
 
@@ -584,7 +599,6 @@
     applyOrder();
     $('resumeButton').hidden = false;
     $('resumeButton').textContent = `Resume ${state.scopeLabel}`;
-    $('pauseWrongToggle').checked = state.pauseWrong !== false;
     $('shuffleMode').value = state.shuffleQuestions ? (state.shuffleChoices ? 'both' : 'questions') : (state.shuffleChoices ? 'choices' : 'off');
   }
 })();
